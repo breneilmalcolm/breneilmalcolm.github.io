@@ -1,15 +1,21 @@
-# Hybrid professional portfolio
+# Breneil Malcolm — Website Version 2
 
-A static, responsive starter website for GitHub Pages.
+Static HTML/CSS/JS website designed for GitHub Pages. Includes a homepage and dedicated first-person **Who I Am** page.
 
-## Publish
-1. Create a public GitHub repository named `YOURUSERNAME.github.io`.
-2. Upload `index.html`, `style.css`, `script.js`, and the `assets` folder to the repository root.
-3. Under Settings → Pages, choose Deploy from a branch, `main`, `/ (root)`.
-4. Visit `https://YOURUSERNAME.github.io` after deployment.
-5. Add your public PDF documents as `assets/cv.pdf` and `assets/resume.pdf`.
-6. Replace `hello@example.com` with your contact address, and replace placeholder text with approved biography, projects, and publications.
-7. To use a custom domain, configure it in Settings → Pages and update DNS at your domain registrar according to GitHub's documentation. Enable Enforce HTTPS when available.
+## Upload update
+1. Extract this ZIP on your computer.
+2. Open your existing `breneilmalcolm.github.io` repository.
+3. Use **Add file → Upload files** and upload `index.html`, `about.html`, `style.css`, and `script.js` to the repository root (not inside a new folder).
+4. When GitHub asks, confirm replacement of existing files and **Commit changes**. If GitHub's upload interface refuses same-name replacements, open each existing file, click the pencil/Edit button, paste the corresponding new file contents, and commit; add `about.html` using **Add file → Upload files**.
+5. Wait for Pages deployment and refresh https://breneilmalcolm.github.io/ (Ctrl+Shift+R if cached).
 
 ## Important
-This is a design prototype, not a completed professional biography. The contact email is a placeholder. PDF download links will not work until you add those files. Some cards link to sections within the prototype, not independent pages. Review all personal details before publication.
+- This version intentionally does **not** publish the uploaded full CV because it includes private phone numbers and reference contact information. Make a public-safe PDF first.
+- Some first-person prose is a draft to review for authentic voice.
+- Scholarly section includes **selected** works only, not the complete publication record. Complete lists can be added later.
+- The contact link uses the professional PSU email address from the CV. Change it if preferred.
+- No personal photo is included yet.
+
+
+## Homepage headshot update
+This version includes `assets/breneil-headshot.webp` and an updated `index.html` and `style.css`. Upload all three to your GitHub repository, preserving the `assets/` folder. The original JPG is not needed on the website.
