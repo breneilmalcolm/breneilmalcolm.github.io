@@ -1,0 +1,17 @@
+
+/* Final-proof refinements: consistent contact footer and full-body hero */
+.v3-contact-footer{background:#101f33;color:#f7f3eb;padding:68px max(6vw,24px);text-align:center;border-top:1px solid #b99b66;font-family:Arial,sans-serif}
+.v3-contact-footer .v3-contact-inner{max-width:760px;margin:auto}
+.v3-contact-footer .v3-contact-kicker{font-size:.7rem;text-transform:uppercase;letter-spacing:.2em;color:#c6a976;margin:0 0 16px}
+.v3-contact-footer h2{font-family:Georgia,serif;font-weight:400;font-size:clamp(2rem,4vw,3.5rem);line-height:1.25;color:#fff;margin:0 0 16px}
+.v3-contact-footer p{color:#d6dce5;margin:0 auto 26px;max-width:580px;line-height:1.7}
+.v3-contact-footer .v3-contact-button{display:inline-block;background:#c6a976;color:#14263d;padding:14px 26px;font-weight:700;text-decoration:none;border-radius:2px}
+.v3-contact-footer .v3-contact-button:hover{background:#e0c592}
+.v3-contact-footer .v3-contact-email{display:block;color:#d6dce5;font-size:.85rem;margin-top:15px}
+.v3-contact-footer .v3-contact-email:hover{color:white}
+.v3-contact-footer .v3-contact-bottom{border-top:1px solid #435167;padding-top:20px;margin-top:50px;font-size:.75rem;color:#aeb8c6}
+/* Full original portrait visible, not cropped */
+body.v3-home .hero-grid .portrait{min-height:0;align-self:center;aspect-ratio:2/3;overflow:hidden;background:#26374b}
+body.v3-home .hero-grid .portrait img{position:static;display:block;width:100%;height:100%;object-fit:contain;object-position:center center}
+body.v3-home .hero-grid .portrait figcaption{z-index:1}
+@media(max-width:760px){body.v3-home .hero-grid .portrait{min-height:0;max-height:none;width:min(100%,470px);margin:0 auto}}

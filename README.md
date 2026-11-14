@@ -24,3 +24,12 @@ This is a **publication proof**, not yet a live deployment. Open `index.html` in
 - Confirm permissions to publish group and client photographs, including visible photographer watermarks.
 - Check links, mobile layouts, PDF downloads and contact details before going live.
 - Some original pages include Google Fonts and may require an internet connection for the exact typography.
+
+
+## Version 3 live-preview refinements (November 14, 2026)
+- Homepage portrait displays in full using `object-fit: contain` (no body cropping).
+- Academic CV and fitness résumé PDF links open in new tabs (browser PDF display depends on visitor settings).
+- Removed outdated prototype and document-coming-soon text.
+- Added a consistent Get in Touch footer to all six pages. The button opens the visitor's default email application, addressed to bxm5750@psu.edu.
+- The contact email can be changed later to a domain-based email address.
+- Do not add a CNAME or change DNS until final domain cutover.
