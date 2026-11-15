@@ -5,7 +5,108 @@
 /* Header pronouns: consistent on every page */
 header .brand .header-pronouns, .site-header .brand .header-pronouns {font-family: 'DM Sans', Arial, sans-serif; font-size: .63em; font-style: normal; font-weight: 500; letter-spacing: .005em; color: #e6d3b1; white-space: nowrap; margin-left: .3em;}
 @media(max-width:600px){header .brand .header-pronouns, .site-header .brand .header-pronouns {font-size: .58em; margin-left: .2em;}}
-</style><link href="assets/site-global.css" rel="stylesheet"/><meta content="Breneil Malcolm, PhD — learning scientist, researcher, higher education leader, and health, fitness and wellness professional." name="description"/><link rel="stylesheet" href="assets/v3-refinements.css"/></head><body class="v3-home">
+</style><link href="assets/site-global.css" rel="stylesheet"/><meta content="Breneil Malcolm, PhD — learning scientist, researcher, higher education leader, and health, fitness and wellness professional." name="description"/><link rel="stylesheet" href="assets/v3-refinements.css"/><style id="compact-site-header">
+/* Compact two-tier header: site identity above navigation on desktop. */
+.site-header {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 5px !important;
+  padding: 9px 4vw 8px !important;
+  min-height: 0 !important;
+}
+.site-header .brand {
+  display: block;
+  max-width: 100%;
+  font-size: clamp(1rem, 1.45vw, 1.22rem) !important;
+  line-height: 1.35 !important;
+  text-align: center;
+  white-space: normal !important;
+}
+.site-header .brand .header-pronouns {
+  display: inline;
+  font-size: .72em !important;
+  white-space: nowrap;
+  margin-left: .2em;
+}
+.site-header nav.v3-global-nav {
+  display: flex;
+  position: static;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: clamp(12px, 2.2vw, 30px);
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+.site-header nav.v3-global-nav a {
+  padding: 3px 0;
+  font-size: .73rem;
+  line-height: 1.4;
+}
+@media (max-width: 760px) {
+  .site-header {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center !important;
+    justify-content: stretch !important;
+    column-gap: 10px !important;
+    row-gap: 0 !important;
+    padding: 9px 4vw !important;
+  }
+  .site-header .brand {
+    min-width: 0;
+    font-size: clamp(.87rem, 3.5vw, 1.04rem) !important;
+    line-height: 1.25 !important;
+    text-align: left;
+    overflow-wrap: normal;
+  }
+  .site-header .brand .header-pronouns {
+    font-size: .72em !important;
+  }
+  .site-header .menu-toggle {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: static;
+    flex-shrink: 0;
+    padding: 7px 9px;
+    font-size: .76rem;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  .site-header nav.v3-global-nav {
+    display: none !important;
+    position: static !important;
+    grid-column: 1 / -1;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 9px 0 4px;
+    margin-top: 8px;
+    border-top: 1px solid #405066;
+    border-bottom: 0;
+    background: transparent;
+  }
+  .site-header nav.v3-global-nav.open { display: flex !important; }
+  .site-header nav.v3-global-nav a {
+    padding: 8px 4px;
+    font-size: .87rem;
+  }
+}
+@media (max-width: 380px) {
+  .site-header { padding-left: 12px !important; padding-right: 12px !important; }
+  .site-header .brand { font-size: .84rem !important; }
+  .site-header .brand .header-pronouns { font-size: .7em !important; }
+  .site-header .menu-toggle { padding: 6px 7px; font-size: .72rem; }
+}
+</style></head><body class="v3-home">
 <a class="skip" href="#main">Skip to content</a><header class="site-header"><a aria-label="Breneil Malcolm home" class="brand" href="index.html">Breneil Malcolm, <span>PhD</span> <span class="header-pronouns">(they/them)</span></a><button aria-controls="site-nav" aria-expanded="false" class="menu-toggle">Menu <span aria-hidden="true">☰</span></button><nav aria-label="Site navigation" class="v3-global-nav" id="site-nav"><a aria-current="page" href="index.html">Home</a><a href="research.html">Research</a><a href="scholarship.html">Scholarship</a><a href="professional-praxis.html">Praxis</a><a href="leadership-service.html">Leadership</a><a href="health-fitness-wellness.html">Wellness</a></nav></header>
 <main id="main"><section class="hero" id="top"><div class="hero-grid"><div class="hero-content"><p class="eyebrow">SCHOLARSHIP <span>·</span> PRAXIS <span>·</span> BECOMING</p><p class="hero-name">Breneil Malcolm <span>PhD · they/them</span></p><h1>Living, learning, and leading <em>at the intersections.</em></h1><p class="hero-description">Intersectional learning scientist. Multi-method researcher. Advocate. Health, fitness, and wellness professional.</p><div class="actions"><a class="button gold" href="#introduction">Discover my story <span>↘</span></a><a class="button outline" href="#research">Explore my work <span>↗</span></a></div></div><figure class="portrait"><img alt="Professional portrait of Breneil Malcolm" decoding="async" height="1440" loading="eager" src="assets/index-1.webp" width="960"/><figcaption>Scholarship, praxis, and embodiment</figcaption></figure></div><div class="hero-foot"><span>AN INTERSECTIONAL PRACTICE</span><span>SCROLL TO EXPLORE ↓</span></div></section>
 <section class="section intro" id="introduction"><div class="section-meta">01 / POSITIONALITY</div><div class="intro-body"><p class="eyebrow ink">A PRACTICE OF INTERSECTIONS</p><h2>Multiplicity is not a departure from my work. <em>It is its foundation.</em></h2><p>I am an intersectional learning scientist, multi-method researcher, advocate, and health, fitness, and wellness professional. As an intersectional learning scientist, I center intersectionality in how I theorize and operationalize the study of learning as socioculturally and sociopolitically situated.</p><p>My approach is holistic, embracing the multiplicity of lived experiences and centering the presence of the self within my scholarly discourse and praxis. Across these interconnected dimensions of my work, I understand learning, knowledge production, and embodied experience as inseparable from the identities, relationships, and systems of power through which they emerge.</p></div></section>

@@ -6,7 +6,108 @@
 /* Header pronouns: consistent on every page */
 header .brand .header-pronouns, .site-header .brand .header-pronouns {font-family: 'DM Sans', Arial, sans-serif; font-size: .63em; font-style: normal; font-weight: 500; letter-spacing: .005em; color: #e6d3b1; white-space: nowrap; margin-left: .3em;}
 @media(max-width:600px){header .brand .header-pronouns, .site-header .brand .header-pronouns {font-size: .58em; margin-left: .2em;}}
-</style><link href="assets/site-global.css" rel="stylesheet"/><meta content="Breneil Malcolm, PhD — learning scientist, researcher, higher education leader, and health, fitness and wellness professional." name="description"/><link rel="stylesheet" href="assets/v3-refinements.css"/></head><body>
+</style><link href="assets/site-global.css" rel="stylesheet"/><meta content="Breneil Malcolm, PhD — learning scientist, researcher, higher education leader, and health, fitness and wellness professional." name="description"/><link rel="stylesheet" href="assets/v3-refinements.css"/><style id="compact-site-header">
+/* Compact two-tier header: site identity above navigation on desktop. */
+.site-header {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 5px !important;
+  padding: 9px 4vw 8px !important;
+  min-height: 0 !important;
+}
+.site-header .brand {
+  display: block;
+  max-width: 100%;
+  font-size: clamp(1rem, 1.45vw, 1.22rem) !important;
+  line-height: 1.35 !important;
+  text-align: center;
+  white-space: normal !important;
+}
+.site-header .brand .header-pronouns {
+  display: inline;
+  font-size: .72em !important;
+  white-space: nowrap;
+  margin-left: .2em;
+}
+.site-header nav.v3-global-nav {
+  display: flex;
+  position: static;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: clamp(12px, 2.2vw, 30px);
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+.site-header nav.v3-global-nav a {
+  padding: 3px 0;
+  font-size: .73rem;
+  line-height: 1.4;
+}
+@media (max-width: 760px) {
+  .site-header {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center !important;
+    justify-content: stretch !important;
+    column-gap: 10px !important;
+    row-gap: 0 !important;
+    padding: 9px 4vw !important;
+  }
+  .site-header .brand {
+    min-width: 0;
+    font-size: clamp(.87rem, 3.5vw, 1.04rem) !important;
+    line-height: 1.25 !important;
+    text-align: left;
+    overflow-wrap: normal;
+  }
+  .site-header .brand .header-pronouns {
+    font-size: .72em !important;
+  }
+  .site-header .menu-toggle {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: static;
+    flex-shrink: 0;
+    padding: 7px 9px;
+    font-size: .76rem;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  .site-header nav.v3-global-nav {
+    display: none !important;
+    position: static !important;
+    grid-column: 1 / -1;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 9px 0 4px;
+    margin-top: 8px;
+    border-top: 1px solid #405066;
+    border-bottom: 0;
+    background: transparent;
+  }
+  .site-header nav.v3-global-nav.open { display: flex !important; }
+  .site-header nav.v3-global-nav a {
+    padding: 8px 4px;
+    font-size: .87rem;
+  }
+}
+@media (max-width: 380px) {
+  .site-header { padding-left: 12px !important; padding-right: 12px !important; }
+  .site-header .brand { font-size: .84rem !important; }
+  .site-header .brand .header-pronouns { font-size: .7em !important; }
+  .site-header .menu-toggle { padding: 6px 7px; font-size: .72rem; }
+}
+</style></head><body>
 <header><div class="container bar"><a class="brand" href="index.html">Breneil Malcolm, <em>PhD</em> <span class="header-pronouns">(they/them)</span></a><button aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation" class="menu" type="button">☰</button><nav aria-label="Site navigation" class="v3-global-nav nav" id="site-nav"><a href="index.html">Home</a><a href="research.html">Research</a><a href="scholarship.html">Scholarship</a><a href="professional-praxis.html">Praxis</a><a aria-current="page" href="leadership-service.html">Leadership</a><a href="health-fitness-wellness.html">Wellness</a></nav></div></header>
 <main id="top"><section class="hero"><div class="container hero-grid"><div><div class="eyebrow">Leadership &amp; Service</div><h1>Leadership as a practice of collective transformation.</h1><div class="rule"></div><p class="lead">Across scholarly publishing, nonprofit governance, disciplinary communities, and mentorship, I approach leadership as a relational and equity-centered practice of advocacy, accountability, and collective advancement.</p><p class="small">Governance · Representation · Intellectual stewardship · Community</p></div><figure class="photo hero-photo"><img alt="Group of people at a Penn State Educational Equity gathering, standing before a blue anniversary backdrop." decoding="async" loading="eager" src="assets/leadership-service-1.webp"/><figcaption>Community and educational equity leadership.</figcaption></figure></div></section>
 <section class="section intro"><div class="container"><div class="narrative"><div class="eyebrow">My leadership philosophy</div><h2 style="margin:12px 0 26px">Beyond representation.</h2><p>My leadership and service are grounded in a commitment to redistributing power, expanding representation, and cultivating communities where diverse identities, experiences, and ways of knowing are recognized and valued. I understand leadership as a relational and equity-centered practice that extends beyond positional authority to encompass advocacy, accountability, and collective transformation.</p><p>Across scholarly publishing, nonprofit governance, professional associations, and mentorship, I work to challenge exclusionary structures, advance underrepresented perspectives, and create opportunities for meaningful participation. These commitments are inseparable from my scholarly praxis, informing how I navigate institutional power, cultivate intergenerational relationships, and contribute to communities of learning and practice.</p></div></div></section>

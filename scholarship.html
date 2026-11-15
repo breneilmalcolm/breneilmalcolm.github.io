@@ -16,7 +16,108 @@
 /* Header pronouns: consistent on every page */
 header .brand .header-pronouns, .site-header .brand .header-pronouns {font-family: 'DM Sans', Arial, sans-serif; font-size: .63em; font-style: normal; font-weight: 500; letter-spacing: .005em; color: #e6d3b1; white-space: nowrap; margin-left: .3em;}
 @media(max-width:600px){header .brand .header-pronouns, .site-header .brand .header-pronouns {font-size: .58em; margin-left: .2em;}}
-</style><link href="assets/site-global.css" rel="stylesheet"/><meta content="Breneil Malcolm, PhD — learning scientist, researcher, higher education leader, and health, fitness and wellness professional." name="description"/><link href="assets/v3-refinements.css" rel="stylesheet"/></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><a aria-label="Breneil Malcolm home" class="brand" href="index.html">Breneil Malcolm, <span>PhD</span> <span class="header-pronouns">(they/them)</span></a><button aria-controls="site-nav" aria-expanded="false" class="menu-toggle">Menu <span aria-hidden="true">☰</span></button><nav aria-label="Site navigation" class="v3-global-nav" id="site-nav"><a href="index.html">Home</a><a href="research.html">Research</a><a aria-current="page" href="scholarship.html">Scholarship</a><a href="professional-praxis.html">Praxis</a><a href="leadership-service.html">Leadership</a><a href="health-fitness-wellness.html">Wellness</a></nav></header>
+</style><link href="assets/site-global.css" rel="stylesheet"/><meta content="Breneil Malcolm, PhD — learning scientist, researcher, higher education leader, and health, fitness and wellness professional." name="description"/><link href="assets/v3-refinements.css" rel="stylesheet"/><style id="compact-site-header">
+/* Compact two-tier header: site identity above navigation on desktop. */
+.site-header {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 5px !important;
+  padding: 9px 4vw 8px !important;
+  min-height: 0 !important;
+}
+.site-header .brand {
+  display: block;
+  max-width: 100%;
+  font-size: clamp(1rem, 1.45vw, 1.22rem) !important;
+  line-height: 1.35 !important;
+  text-align: center;
+  white-space: normal !important;
+}
+.site-header .brand .header-pronouns {
+  display: inline;
+  font-size: .72em !important;
+  white-space: nowrap;
+  margin-left: .2em;
+}
+.site-header nav.v3-global-nav {
+  display: flex;
+  position: static;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: clamp(12px, 2.2vw, 30px);
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+.site-header nav.v3-global-nav a {
+  padding: 3px 0;
+  font-size: .73rem;
+  line-height: 1.4;
+}
+@media (max-width: 760px) {
+  .site-header {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center !important;
+    justify-content: stretch !important;
+    column-gap: 10px !important;
+    row-gap: 0 !important;
+    padding: 9px 4vw !important;
+  }
+  .site-header .brand {
+    min-width: 0;
+    font-size: clamp(.87rem, 3.5vw, 1.04rem) !important;
+    line-height: 1.25 !important;
+    text-align: left;
+    overflow-wrap: normal;
+  }
+  .site-header .brand .header-pronouns {
+    font-size: .72em !important;
+  }
+  .site-header .menu-toggle {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: static;
+    flex-shrink: 0;
+    padding: 7px 9px;
+    font-size: .76rem;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  .site-header nav.v3-global-nav {
+    display: none !important;
+    position: static !important;
+    grid-column: 1 / -1;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 9px 0 4px;
+    margin-top: 8px;
+    border-top: 1px solid #405066;
+    border-bottom: 0;
+    background: transparent;
+  }
+  .site-header nav.v3-global-nav.open { display: flex !important; }
+  .site-header nav.v3-global-nav a {
+    padding: 8px 4px;
+    font-size: .87rem;
+  }
+}
+@media (max-width: 380px) {
+  .site-header { padding-left: 12px !important; padding-right: 12px !important; }
+  .site-header .brand { font-size: .84rem !important; }
+  .site-header .brand .header-pronouns { font-size: .7em !important; }
+  .site-header .menu-toggle { padding: 6px 7px; font-size: .72rem; }
+}
+</style></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><a aria-label="Breneil Malcolm home" class="brand" href="index.html">Breneil Malcolm, <span>PhD</span> <span class="header-pronouns">(they/them)</span></a><button aria-controls="site-nav" aria-expanded="false" class="menu-toggle">Menu <span aria-hidden="true">☰</span></button><nav aria-label="Site navigation" class="v3-global-nav" id="site-nav"><a href="index.html">Home</a><a href="research.html">Research</a><a aria-current="page" href="scholarship.html">Scholarship</a><a href="professional-praxis.html">Praxis</a><a href="leadership-service.html">Leadership</a><a href="health-fitness-wellness.html">Wellness</a></nav></header>
 <main id="main"><section class="sch-hero" id="top"><div class="sch-inner sch-hero-grid"><div class="sch-hero-copy"><div class="sch-eyebrow">Research · Publications · Scholarly dialogue</div><h1>Knowledge in <em>conversation.</em></h1><p class="sch-lead">My scholarship engages learning, embodiment, identity, and the sociopolitical conditions through which knowledge is produced. Across journal articles, conference papers, symposia, and creative scholarly contributions, I pursue inquiry that remains accountable to lived experience, critical reflexivity, and collective transformation.</p><div class="sch-statbar"><div><strong>4</strong><span>Peer-reviewed journal articles</span></div><div><strong>7</strong><span>Conference contributions</span></div><div><strong>2022–2026</strong><span>Selected scholarly work</span></div></div></div><figure class="sch-photo"><img alt="Portrait of Breneil seated against a dark studio background, wearing a burgundy draped top." decoding="async" loading="eager" src="assets/scholarship-1.jpg"/><figcaption>Scholarship · Dialogue · Knowledge production</figcaption></figure></div></section>
 <div class="sch-body"><div class="sch-eyebrow" style="color:#876e43">Publication archive</div><div class="sch-controls"><label for="pub-search">Explore</label><input aria-label="Search publications" id="pub-search" placeholder="Search titles, topics, authors…" type="search"/><label for="pub-year">Year</label><select aria-label="Filter by year" id="pub-year"><option value="all">All years</option><option>2026</option><option>2025</option><option>2024</option><option>2022</option></select></div>
 <section class="sch-section" id="journal-articles"><div class="sch-section-header"><h2>Peer-reviewed <em>journal articles</em></h2><span>01 / 02</span></div><article class="publication" data-search="the whiteness agenda: a trans* of color critique for portraiture and autotheory as learning sciences discourse malcolm, b. (2026). international journal of qualitative studies in education, 39(1), 1–20. journal article" data-year="2026"><div class="pub-year">2026</div><div class="pub-detail"><div class="pub-tag">Journal article</div><h3>The whiteness agenda: A trans* of color critique for portraiture and autotheory as learning sciences discourse</h3><p class="pub-citation">Malcolm, B. (2026). <em>International Journal of Qualitative Studies in Education, 39(1), 1–20.</em></p><a class="pub-link" href="https://doi.org/10.1080/09518398.2026.2698446" rel="noopener noreferrer" target="_blank">Read publication <span aria-hidden="true">↗</span></a></div></article>
